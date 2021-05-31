@@ -7,7 +7,7 @@ FROM alpine:latest
 
 MAINTAINER Dolphin2Point0, <finb7729@gmail.com>
 
-RUN apk add --no-cache --update freetype harfbuzz curl openssl zlib jpeg \
+RUN apk add --no-cache --update bash ca-certificates fontconfig freetype harfbuzz curl openssl zlib jpeg \
     && adduser --disabled-password --home /home/container container
 
 USER container
